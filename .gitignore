@@ -1,0 +1,135 @@
+natxora-site/
+├─ package.json
+├─ astro.config.mjs
+├─ .gitignore
+├─ src/
+│  ├─ layouts/
+│  │  └─ Base.astro
+│  └─ pages/
+│     ├─ index.md
+│     └─ now.md
+
+{
+  "name": "natxora-site",
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build"
+  },
+  "dependencies": {
+    "astro": "^4.0.0"
+  }
+}
+
+import { defineConfig } from 'astro/config';
+
+export default defineConfig({});
+
+---
+const { title = 'natxora' } = Astro.props;
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <style>
+      body {
+        font-family: system-ui, sans-serif;
+        background: #0f1115;
+        color: #eaeaf0;
+        padding: 2rem;
+      }
+      a { color: #8ab4f8; text-decoration: none; }
+      main { max-width: 760px; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <slot />
+    </main>
+  </body>
+</html>
+
+node_modules
+dist
+.env
+
+---
+layout: ../layouts/Base.astro
+title: natxora | Page 1/2
+---
+
+## Page 1/2 — About
+
+### About Me
+
+I am an Indian guy from Northeast India, Assam. My name is not publicly available. Get to know me to know my name.
+
+I have a curious and creative personality. I am deeply interested in drawing, coding, mathematics (even though I’m not very good at it yet), and astronomy. I consider myself a creative individual and I am currently working on improving my physique. I am also interested in martial arts, especially MMA and Muay Thai.
+
+I am an ambivert, but I am **very talkative** with people I am comfortable with. I am a minor, born in 2012.
+
+My mother tongue is Bengali. I can speak Bengali, Hindi, Assamese, and English. I am also learning Japanese.
+
+---
+
+### Personality
+
+Kind, humble, and thoughtful. Somewhat philosophical. Smart in my own way. Kind of funny (according to me). Still learning, still improving, and not good at everything yet.
+
+---
+
+### Socials
+
+- **Social media name**: natxora  
+- **Instagram**: natxora.fx  
+- **Instagram (alt)**: trxsxyn.vv  
+- **YouTube**: (add link)  
+- **Roblox**: n4txora.rx  
+- **Discord**: natxora  
+- **Email**: natxora@gmail.com
+
+---
+
+[Go to Page 2/2 →](/now)
+
+---
+layout: ../layouts/Base.astro
+title: natxora | Page 2/2
+---
+
+## Page 2/2 — Now
+
+### Current Focus
+
+Right now, I am focusing heavily on maintaining my physical and mental health. Fitness has become an important part of my daily routine, and I am slowly building discipline and consistency.
+
+I am learning coding, mainly working with Python and HTML. Since I don’t currently own a computer or laptop, I rely on mobile-based coding applications, which has taught me how to work with limitations instead of waiting for perfect conditions.
+
+Art is one of my biggest passions. I am actively improving my understanding of anatomy, color theory, shapes, and object construction. Lighting and shadows are something I practice frequently, as they play a major role in making drawings feel alive and realistic.
+
+Astronomy continues to be one of my strongest interests. I spend time learning about interstellar space, objects beyond our solar system, galaxies, and other fascinating cosmic phenomena. Space has been one of my greatest fascinations since childhood, and that curiosity hasn’t faded.
+
+---
+
+### Uses
+
+- **Drawing**: Pinterest for references and idea generation.
+- **Coding**: Simple coding apps from the Play Store due to lack of a PC or laptop.
+- **Research & Learning**: Google, Wikipedia, and ChatGPT for school, space research, and personal curiosity.
+
+---
+
+### Contact Rules
+
+1. Be polite and respectful.
+2. Do not contact me for any NSFW content or reasons.
+3. Harsh language is acceptable if it is friendly.
+4. Please use common sense while interacting.
+5. People who can switch between brainrot humor and wisdom within seconds are warmly welcomed.
+
+---
+
+[← Back to Page 1/2](/)
